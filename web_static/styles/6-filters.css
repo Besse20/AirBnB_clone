@@ -1,0 +1,93 @@
+.filters {
+    background-color: white;
+    position: relative;
+    height: 70px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+}
+
+.filters button {
+    background-color: #ff5a5f;
+    color: #ffffff;
+    height: 48px;
+    width: 20%;
+    border-style: none;
+    border-radius: 4px;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    right: 30px;
+}
+
+.filters button:hover {
+    opacity: 0.9;
+}
+
+.filters .locations,
+.filters .amenities {
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    margin-top: -50%;
+
+}
+.filters .amenities{
+    margin-left: -2px;
+}
+
+.filters .locations {
+    border-right: 1px solid #dddddd;
+}
+
+.filters .locations h3,
+.filters .amenities h3 {
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-left: 60px;
+}
+
+.filters .locations h4,
+.filters .amenities h4 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-left: 60px;
+}
+
+.popover {
+    display: none;
+    position: absolute;
+    background-color: #fafafa;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    width: 100%;
+    z-index: 1;
+
+    padding-top: 10px;
+    margin-left: -2px;
+}
+
+.locations:hover .popover,
+.amenities:hover .popover {
+    display: block;
+}
+
+.popover ul {
+    list-style-type: none;
+}
+.popover li {
+    padding-top: 10px;
+}
+
+.popover ul.list_1 {
+    margin-top: 0px;
+}
+
+.popover ul ul{
+    margin-top: -20px;
+}
